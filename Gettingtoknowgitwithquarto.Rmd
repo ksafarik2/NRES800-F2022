@@ -31,3 +31,67 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+There are many options for [html-style](https://quarto.org/docs/reference/formats/html.html) documents.
+
+```{r example_yaml}
+#| eval: false
+#| echo: true
+#| code-fold: true
+
+
+title: "Getting to know git with Quarto"
+date: last-modified
+author:
+  - name: Chris Chizinski 
+    url: https://twitter.com/chrischizinski
+    affiliation: University of Nebraska-Lincoln
+    affiliation-url: https://humandimensions.unl.edu/about-lab
+title-block-banner: true
+#title-block-banner: "#562457"
+format:
+  html:
+    theme: flatly
+    code-fold: true
+    toc: true
+    number-sections: true
+bibliography: penguins.bib
+link-citations: yes
+csl: american-fisheries-society.csl
+editor: visual
+
+```
+
+### Excercise 1
+
+Take 5 minutes to explore the options and settle on an html format that you are happy with for today.
+
+🧶 ✅ ⬆️ *Knit, commit, and push your changes to GitHub with the commit message "Exercise 1 complete". Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
+
+## Working with the `palmerpenguin` dataset
+
+As everyone always says,
+
+> penguins are very cute! ...so let's work with penguin data today.
+
+You can use special '[callout blocks](https://quarto.org/docs/authoring/callouts.html)' to draw extra attention to certain concepts or supplementary material
+
+::: callout-note
+Note that the palmerpenguins dataset is meant as an alternative to the commonly used `iris` data.
+:::
+
+More information on this data set is available on [Allison Horst's Github page.](https://allisonhorst.github.io/palmerpenguins/)
+
+::: {.callout-caution collapse="true"}
+## Expand to learn more about where the data was collected
+
+Data were collected and made available by Dr. Kristen Gorman and the Palmer Station, Antarctica LTER, a member of the Long Term Ecological Research Network.
+:::
+
+### Excercise 2
+
+Insert links for 1) Dr. Kristen Gorman and 2) Palmer Station
+
+Change the call-out chunk title to something more informative
+
+🧶 ✅ ⬆️ *Knit, commit, and push your changes to GitHub with the commit message "Exercise 2 complete". Make sure to commit and push all changed files so that your Git pane is cleared up afterwards.*
